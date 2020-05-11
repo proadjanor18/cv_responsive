@@ -1,0 +1,370 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem; }
+
+p {
+  margin: 1rem 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.red-divider {
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  color: var(--light); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*menu */
+.navbar {
+  background: var(--dark);
+  color: var(--background);
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-items: center; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+    .navbar .navbar-nav .navbar-collapse {
+      text-align: center;
+      font-weight: bold; }
+    .navbar .navbar-nav li a {
+      color: white; }
+      .navbar .navbar-nav li a:hover {
+        color: var(--background);
+        transition: all 0.2s; }
+    .navbar .navbar-nav .navbar-default .navbar-toggle {
+      border-style: none; }
+    .navbar .navbar-nav .icon-bar {
+      background-color: #fff !important; }
+
+/* about */
+#about {
+  background: var(--dark);
+  padding-top: 100px;
+  text-align: center; }
+  #about .profile-picture {
+    text-align: center;
+    margin: 2rem auto;
+    float: none; }
+  #about .heading h1 {
+    color: var(--background); }
+    #about .heading h1:hover {
+      color: white; }
+  #about .heading h3 {
+    color: var(--grey); }
+  #about .button1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--background);
+    border: 1px solid var(--background);
+    border-radius: 10px;
+    padding: 1rem 4rem;
+    display: inline-block;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s; }
+    #about .button1:hover {
+      background: var(--background);
+      color: var(--dark);
+      text-decoration: none; }
+
+/* skills */
+#skills {
+  background: url(../images/interface1.jpg) center center/cover;
+  background-color: linear-gradient(to right, var(--background), var(--grey)); }
+  #skills .heading h2 {
+    color: var(--dark);
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold; }
+  #skills .progress {
+    height: 100%;
+    border-radius: 1rem;
+    backface-visibility: var(--primary); }
+  #skills .progress-bar {
+    background: var(--dark);
+    text-shadow: 1px 1px 1px var(--hint);
+    color: #333;
+    justify-content: center;
+    /*pour intégrer les différents logo de chacune des techno*/ }
+    #skills .progress-bar i {
+      font-size: 0.5rem;
+      text-align: center;
+      position: center; }
+    #skills .progress-bar .html {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: #d63031; }
+    #skills .progress-bar .css {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: var(--light); }
+    #skills .progress-bar .sass {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: orange; }
+    #skills .progress-bar .javascript {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: yellow; }
+    #skills .progress-bar .bootstrap {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: #6c5ce7; }
+    #skills .progress-bar .php {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: purple; }
+    #skills .progress-bar .git {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: #d63031; }
+    #skills .progress-bar .wordpress {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: var(light); }
+    #skills .progress-bar .react {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      color: blue; }
+
+/*experiences*/
+#experiences {
+  background: var(--dark); }
+  #experiences .heading h2 {
+    color: var(--background);
+    text-align: center; }
+  #experiences .timeline {
+    position: relative;
+    padding: 2rem 1rem; }
+  #experiences .timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    content: " ";
+    background: var(--background);
+    left: 50%;
+    margin-left: -2.5px; }
+  #experiences .timeline > li {
+    position: relative;
+    margin-bottom: 2rem; }
+  #experiences .timeline > li:after {
+    clear: both; }
+  #experiences .timeline > li:before, #experiences .timeline > li:after {
+    content: " ";
+    display: table; }
+  #experiences .timeline > li .timeline-badge {
+    color: var(--dark);
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 1.6rem;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 50%;
+    background-color: var(--background); }
+  #experiences .timeline-panel-container {
+    width: 50%;
+    float: left; }
+  #experiences .timeline-panel-container-inverted {
+    width: 50%;
+    float: right; }
+  #experiences .timeline-panel {
+    width: 90%;
+    float: right;
+    border: 1px solid var(--background);
+    margin-right: 40px;
+    border-radius: 10px;
+    padding: 20px 25px;
+    position: relative;
+    background: var(--background);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
+  #experiences .timeline-panel-container-inverted .timeline-panel {
+    margin-left: 40px;
+    float: left; }
+  #experiences .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid var(--background);
+    border-right: 0 solid var(--background);
+    border-bottom: 14px solid transparent;
+    content: " "; }
+  #experiences .timeline-panel-container-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto; }
+  #experiences .timeline-heading h3 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold; }
+  #experiences .timeline-heading h4 {
+    font-size: 1.1rem;
+    color: var(--dark); }
+  #experiences .timeline-heading p {
+    font-size: 0.5rem;
+    color: var(--text); }
+  #experiences .glyphicon-time {
+    font-size: 1.5rem;
+    color: var(--dark);
+    font-weight: bold;
+    text-align: center; }
+
+/* education */
+#education {
+  background: url(../images/interface1.jpg) center center/cover;
+  background-color: linear-gradient(to right, var(--background), var(--grey)); }
+  #education .heading h2 {
+    color: var(--dark);
+    text-align: center; }
+  #education .education-block {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid var(--dark);
+    background: var(--background);
+    border-radius: 10px;
+    padding: 3rem;
+    margin-bottom: 2rem; }
+    #education .education-block h5 {
+      color: var(--dark);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem; }
+    #education .education-block .glyphicon {
+      font-size: 2.5rem; }
+    #education .education-block h4 {
+      font-size: 2.5rem;
+      color: var(--dark); }
+    #education .education-block h6 {
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem; }
+    #education .education-block .red-divider {
+      margin-bottom: 1rem;
+      background: var(--dark);
+      height: 0.1rem; }
+    #education .education-block span {
+      color: var(--dark);
+      font-style: normal;
+      font-size: 1.2rem;
+      padding: 0 0.5rem; }
+
+/* PORFOLIO */
+#porfolio {
+  background: var(--dark); }
+  #porfolio .heading h2 {
+    color: var(--background);
+    text-align: center; }
+  #porfolio .thumbnail img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    box-sizing: content-box;
+    -webkit-filter: grayscale(100%); }
+    #porfolio .thumbnail img:hover {
+      filter: none;
+      -webkit-filter: none; }
+
+/* footer */
+footer {
+  background: var(--background);
+  padding: 1rem;
+  margin: 0;
+  height: 80px;
+  text-align: center; }
+  footer .glyphicon {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--dark);
+    height: 3rem; }
+    footer .glyphicon:hover {
+      font-size: 2.7rem;
+      color: var(--light); }
+  footer h6 {
+    color: var(--dark);
+    text-transform: initial;
+    padding: 1rem; }
+
+/*Formulaire */
+#formulaire {
+  background: var(--background);
+  text-align: center;
+  padding: 2rem 3rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
+  #formulaire h4 {
+    font-weight: bold;
+    margin: 1rem 3rem;
+    color: var(--dark); }
+  #formulaire form {
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #formulaire form .prefix {
+      background: linear-gradient(to right, var(--light), var(--dark));
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 2rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem; }
+    #formulaire form button {
+      background: var(--background);
+      border: 0;
+      cursor: pointer;
+      transition: all 0.2s; }
+      #formulaire form button:hover {
+        opacity: 0.8;
+        transition: 0.2s; }
+    #formulaire form button .postfix {
+      background: linear-gradient(to right, var(--dark), var(--light));
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 2rem;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem; }
+    #formulaire form input {
+      outline: 0;
+      border: 0;
+      padding: 1rem 2rem;
+      min-width: 300px;
+      line-height: 2rem;
+      text-align: center; }
+      #formulaire form input .placehoder {
+        color: var(--text); }
